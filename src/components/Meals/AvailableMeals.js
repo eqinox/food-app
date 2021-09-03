@@ -11,7 +11,7 @@ const AvailableMeals = () => {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch("http://localhost:1339/meals/al");
+      const response = await fetch("http://localhost:1339/meals/all");
       if (!response.ok) {
         throw new Error("Something went wrong!");
       }
